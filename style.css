@@ -21,6 +21,16 @@ body{
 }
 
 .tx{
-    text-align: center;
-    font-size: 50px;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 25%;
+}
+
+.imput{
+    font-size: 40px;
+}
+
+.button{
+    font-size: 40px;
+    width: 40px;
 }

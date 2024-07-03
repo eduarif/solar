@@ -8,12 +8,55 @@
         <title> Calcule a quantidade de painéis solares </title>
     </head>
     <body class="tx">
-        <label> quantos GW voçe gasta de energia pro mes</label>
-        <br>
-        <input type="number" >
 
-        <label >quantidade de paineis de 100</label>
         
+        <br>
+        <br>
+        <label>Quantos GW você gasta de energia pro mes</label>
+        <br>
+        <br>
+        <input type="number" id="number" class="imput" >
+        <input type="button" onclick="calcular()" class="button" >
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <label >Quantidade de paineis de 100</label>
+        <br>
+        <br>
+        <input type="number" id="resultado" class="imput">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <label >Quantidade de paineis de 200</label>
+        <br>
+        <br>
+        <input type="number" id="resultado2" class="imput">
+
+
+
+        <script>
+            function calcular(){
+                var valor = document.getElementById('number').value
+                var calculo1 = valor * 100
+                var calculo2 = valor * 200
+
+                document.getElementById("resultado").value = calculo1
+                document.getElementById("resultado2").value = calculo2
+            }
+            
+
+
+        </script>
         
 
     </body>
