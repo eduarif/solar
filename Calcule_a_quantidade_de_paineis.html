@@ -12,7 +12,7 @@
         
         <br>
         <br>
-        <label>Quantos media de GW você gasta de energia por mes</label>
+        <label>Quantos media de KW você gasta de energia por mes</label>
         <br>
         <br>
         <input type="number" id="number" class="imput" >
@@ -25,7 +25,7 @@
         <br>
 
 
-        <label >Quantidade minima de paineis de 100V para suprir esse gasto</label>
+        <label >Quantidade minima de paineis de 580V para suprir esse gasto</label>
         <br>
         <br>
         <input type="number" id="resultado" class="imput">
@@ -37,7 +37,7 @@
         <br>
 
 
-        <label >Quantidade minima de paineis de 200V para suprir esse gasto</label>
+        <label >Quantidade minima de paineis de 600V para suprir esse gasto</label>
         <br>
         <br>
         <input type="number" id="resultado2" class="imput">
@@ -47,11 +47,11 @@
         <script>
             function calcular(){
                 var valor = document.getElementById('number').value
-                var calculo1 = valor * 100
-                var calculo2 = valor * 200
+                var calculo1 = valor / 30 / 4.16 * 1000 / 580 
+                var calculo2 = valor / 30 / 4.16 * 1000 / 600 
 
-                document.getElementById("resultado").value = calculo1
-                document.getElementById("resultado2").value = calculo2
+                document.getElementById("resultado").value = Math.ceil(calculo1)
+                document.getElementById("resultado2").value = Math.ceil(calculo2)
             }
             
 
