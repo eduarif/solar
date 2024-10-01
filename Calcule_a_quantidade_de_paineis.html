@@ -7,42 +7,23 @@
         <link rel="stylesheet" href="reset.css" />
         <title> Calcule a quantidade de painéis solares </title>
     </head>
-    <body class="tx">
+    <body class="main fx-column ">        
+        <div class="mg-bt-25px fx-column">
+            <label>Quantos media de KW você gasta de energia por mes</label>
 
-        
-        <br>
-        <br>
-        <label>Quantos media de KW você gasta de energia por mes</label>
-        <br>
-        <br>
-        <input type="number" id="number" class="imput" >
-        <input type="button" onclick="calcular()" class="button" >
+            <input type="number" id="number" placeholder="kW" class="imput mg-bt-15px" >
+            <button type="button" onclick="calcular()" class="button mg-bt-15px" >calcular</button>
+        </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="mg-bt-25px fx-column">
+            <label >Quantidade minima de paineis de 580V para suprir esse gasto</label>
+                <input type="text" id="resultado" class="imput mg-bt-15px" disabled >
+        </div>
 
-
-        <label >Quantidade minima de paineis de 580V para suprir esse gasto</label>
-        <br>
-        <br>
-        <input type="number" id="resultado" class="imput">
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-        <label >Quantidade minima de paineis de 600V para suprir esse gasto</label>
-        <br>
-        <br>
-        <input type="number" id="resultado2" class="imput">
-
-
+        <div class="mg-bt-25px fx-column">
+            <label >Quantidade minima de paineis de 600V para suprir esse gasto</label>
+                <input type="text" id="resultado2" class="imput mg-bt-15px" disabled>
+        </div>
 
         <script>
             function calcular(){
